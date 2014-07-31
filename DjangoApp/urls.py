@@ -8,5 +8,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'DjangoApp.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^$', 'Principal.views.index'),
+    url(r'^privado/$', 'Principal.views.privado'),
     url(r'^admin/', include(admin.site.urls)),
 )
